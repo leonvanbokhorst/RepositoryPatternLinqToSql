@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Database Name="Remondo" Class="CarsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings"
+              ConnectionString="Data Source=.\sqlexpress;Initial Catalog=Remondo;Integrated Security=True"
+              SettingsObjectName="Remondo.Database.Properties.Settings" SettingsPropertyName="RemondoConnectionString"
+              Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Car" Member="Cars">
+    <Type Name="Car" InheritanceCode="C">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true"
+              CanBeNull="false" />
+      <Column Name="Brand_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Discriminator" AccessModifier="Protected" Type="System.String" DbType="Char(3) NOT NULL"
+              CanBeNull="false" IsDiscriminator="true" />
+      <Column Name="Year" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Brand_Car" Member="Brand" ThisKey="Brand_ID" OtherKey="ID" Type="Brand" IsForeignKey="true" />
+      <Type Name="SportsCar" InheritanceCode="S" IsInheritanceDefault="true">
+        <Column Member="NumOfTurbos" Type="System.Int32" CanBeNull="false" />
+      </Type>
+      <Type Name="ElectricHybridCar" InheritanceCode="E">
+        <Column Member="NumOfBatteries" Type="System.Int32" CanBeNull="false" />
+      </Type>
+    </Type>
+  </Table>
+  <Table Name="dbo.Brand" Member="Brands">
+    <Type Name="Brand">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true"
+              CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Brand_Car" Member="Cars" ThisKey="ID" OtherKey="Brand_ID" Type="Car" />
+    </Type>
+  </Table>
+</Database>

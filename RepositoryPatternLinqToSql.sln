@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToSqlRepositoryConsole", "LinqToSqlRepositoryConsole\LinqToSqlRepositoryConsole.csproj", "{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remondo.Database.Repositories", "Remondo.Database.Repository\Remondo.Database.Repositories.csproj", "{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remondo.Database", "RemondoDb\Remondo.Database.csproj", "{E09B12FA-2048-4858-AE92-A6784E60B10A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Debug|x86.ActiveCfg = Debug|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Debug|x86.Build.0 = Debug|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Release|Any CPU.ActiveCfg = Release|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Release|x86.ActiveCfg = Release|x86
+		{7EAD8991-CDC4-4B9F-ABF8-C94F7469C011}.Release|x86.Build.0 = Release|x86
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D1EB3705-4C6E-47C3-93C0-F7B5AB6B1D61}.Release|x86.ActiveCfg = Release|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E09B12FA-2048-4858-AE92-A6784E60B10A}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
